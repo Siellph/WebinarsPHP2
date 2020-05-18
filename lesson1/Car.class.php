@@ -27,8 +27,8 @@ include "Outer.php";
 // $a->view();
 
 class Car {
-    var $title;
-    var $price;
+    protected $title;
+    protected $price;
 
     function __construct($title, $price)
     {
@@ -38,31 +38,33 @@ class Car {
         // $this->setter($title, $price);
     }
 
+    // function test() {
+    //     echo "test";
+    // }
+
     // function setter($title, $price){
     //     $this->title = $title;
     //     $this->price = $price;
     // }
 
     function drive() {
-        $obj = new Outer;
-        $obj->test();
-        echo "Автомобиль ".$this->title." стоит ".$this->price."<br>"; 
+        echo "Автомобиль ".$this->title." стоит ".$this->price." у.е. <br>"; 
     }
 }
 
-$car = new Car("Audi", 1000);
-// $car->setter("Audi", 1000);
-// $car->title = "Audi";
-// $car->price = 1000;
-// $car->drive();
+// $car = new Car("Audi", 1000);
+// // $car->setter("Audi", 1000);
+// // $car->title = "Audi";
+// // $car->price = 1000;
+// // $car->drive();
 
-$car2 = new Car("BMW", 1100);
-$car3 = new Car("VW", 900);
-$mas = [$car, $car2, $car3];
+// $car2 = new Car("BMW", 1100);
+// $car3 = new Car("VW", 900);
+// $mas = [$car, $car2, $car3];
 
-foreach ($mas as $value) {
-    $value->drive();
-}
+// foreach ($mas as $value) {
+//     $value->drive();
+// }
 // $car->setter("BMW", 1100);
 // $car2->drive();
 
