@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af8f61f3-0499-4ff3-bf4c-eadc0f174f6f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lesson2/abstract/admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson2/abstract/base.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson2/abstract/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson2/abstract/site.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson2/demo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson2/magic/autoload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson2/magic/classes/goods.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson2/magic/magic.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson2/namespaces/admin/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson2/namespaces/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson2/namespaces/site/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson2/testSingleton.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="af8f61f3-0499-4ff3-bf4c-eadc0f174f6f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,17 +14,7 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lesson2/testSingleton.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="39" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -80,6 +56,11 @@
             <path>
               <item name="WebinarsPHP2" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebinarsPHP2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebinarsPHP2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebinarsPHP2" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson1" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -123,12 +104,12 @@
       <option name="presentableId" value="Default" />
       <updated>1589797326064</updated>
       <workItem from="1589797329339" duration="3338000" />
-      <workItem from="1590131172649" duration="4835000" />
+      <workItem from="1590131172649" duration="5001000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8173000" />
+    <option name="totallyTimeSpent" value="8339000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -158,13 +139,10 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lesson1/homework/index.php">
+    <entry file="file://$PROJECT_DIR$/lesson1/homework1/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="592">
           <caret line="103" column="17" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="17" />
-          <folding>
-            <marker date="1589800616063" expanded="true" signature="1415:2548" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
