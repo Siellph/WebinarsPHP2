@@ -94,11 +94,14 @@
               <item name="lesson5" type="462c0819:PsiDirectoryNode" />
               <item name="m" type="462c0819:PsiDirectoryNode" />
             </path>
+<<<<<<< Updated upstream
             <path>
               <item name="lesson5" type="b2602c69:ProjectViewProjectNode" />
               <item name="lesson5" type="462c0819:PsiDirectoryNode" />
               <item name="v" type="462c0819:PsiDirectoryNode" />
             </path>
+=======
+>>>>>>> Stashed changes
           </expand>
           <select />
         </subPane>
@@ -144,12 +147,20 @@
       <workItem from="1590686282286" duration="171000" />
       <workItem from="1590856598899" duration="2400000" />
       <workItem from="1591008165801" duration="4480000" />
+<<<<<<< Updated upstream
       <workItem from="1591170513434" duration="1950000" />
+=======
+      <workItem from="1591170513434" duration="2116000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="9001000" />
+=======
+    <option name="totallyTimeSpent" value="9167000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -251,9 +262,12 @@
     <entry file="file://$PROJECT_DIR$/v/u_login.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/v/u_info.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+=======
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/v/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-112" />
@@ -269,5 +283,11 @@
     <entry file="file://$PROJECT_DIR$/m/model.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+<<<<<<< Updated upstream
+=======
+    <entry file="file://$PROJECT_DIR$/v/u_info.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+>>>>>>> Stashed changes
   </component>
 </project>
