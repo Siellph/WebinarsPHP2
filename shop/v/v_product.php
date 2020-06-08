@@ -8,7 +8,7 @@
 </script>
 <div class="product">
 	<h1><span><?= $product["title"] ?></span></h1>
-	<img src="<?= $product["image"] ?>" alt="Изображение" title="<?= $product["title"] ?>" target="_blank">
+	<img src="img/big/<?= $product["image"] ?>" alt="Изображение" title="<?= $product["title"] ?>" target="_blank">
 	<span class="content"><?= $product["content"] ?></span>
 	<h3><?= $product["price"] ?> $</h3>
 	<?php

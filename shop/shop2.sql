@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.0
+-- version 4.9.3
 -- https://www.phpmyadmin.net/
 --
--- Хост: 127.0.0.1
--- Время создания: Дек 03 2017 г., 22:08
--- Версия сервера: 10.1.25-MariaDB
--- Версия PHP: 7.1.7
+-- Хост: localhost:8889
+-- Время создания: Июн 09 2020 г., 00:22
+-- Версия сервера: 5.7.26
+-- Версия PHP: 7.4.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -19,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- База данных: `test`
+-- База данных: `shop2`
 --
 
 -- --------------------------------------------------------
@@ -41,8 +39,7 @@ CREATE TABLE `basket` (
 --
 
 INSERT INTO `basket` (`order_id`, `user_id`, `product_id`, `count`, `status`) VALUES
-(3, '6', '1', '4', 0),
-(4, '6', '3', '1', 0);
+(5, '8', '1', '1', 0);
 
 -- --------------------------------------------------------
 
@@ -54,7 +51,7 @@ CREATE TABLE `products` (
   `id` int(11) NOT NULL,
   `image` varchar(55) NOT NULL,
   `title` varchar(55) NOT NULL,
-  `content` varchar(255) NOT NULL,
+  `content` varchar(500) NOT NULL,
   `price` varchar(55) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -63,21 +60,15 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `image`, `title`, `content`, `price`) VALUES
-(1, 'img/1.jpg', 'product 1', 'first product', '10'),
-(2, 'img/2.jpg', 'product 2', 'second product', '20'),
-(3, 'img/3.jpg', 'product 3', 'third product', '30'),
-(4, 'img/4.jpg', 'product 4', '4 product', '22'),
-(5, 'img/5.jpg', 'product 5', '5 product', '55'),
-(6, 'img/6.jpg', 'product 6', '6 product', '66'),
-(7, 'img/7.jpg', 'product 7', '7 product', '77'),
-(8, 'img/8.jpg', 'product 8', '8 product', '88'),
-(9, 'img/9.jpg', 'product 9', '9 product', '99'),
-(10, 'img/10.jpg', 'product 10', '10 product', '1010'),
-(11, 'img/11.jpg', 'product 11', '11 product', '1111'),
-(12, 'img/12.jpg', 'product 12', '12 product', '1212'),
-(13, 'img/13.jpg', 'product 13', '13 product', '1313'),
-(14, 'img/14.jpg', 'product 14', '14 product', '1414'),
-(15, 'img/15.jpg', 'product 15', '15 product', '1515');
+(1, 'capture.jpg', 'Карта захвата', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', '10'),
+(2, 'gamepad.jpg', 'Геймпад', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', '20'),
+(3, 'graph.jpg', 'Видеокарта', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', '30'),
+(4, 'keyboard.jpg', 'Клавиатура', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', '22'),
+(5, 'monitor.jpg', 'Монитор', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', '55'),
+(6, 'mouse.jpg', 'Мышь', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', '66'),
+(7, 'notebook.jpg', 'Ноутбук', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', '77'),
+(8, 'proc.jpg', 'Процессор', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', '88'),
+(9, 'tablet.jpg', 'Планшет', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', '99');
 
 -- --------------------------------------------------------
 
@@ -98,8 +89,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `login`, `password`, `role`) VALUES
-(6, 'aidar', 'admin', 'f0d587897834a73c4ca8290d3b13742781dc9bdb52d04dc20036dbd8313ed055', 1),
-(7, 'asdasd', 'dvvd', 'c011728eed899c6e4694f44f761f5f8a81dc9bdb52d04dc20036dbd8313ed055', 0);
+(8, 'admin', 'admin', '3cf108a4e0a498347a5a75a792f2321221232f297a57a5a743894a0e4a801fc3', 0);
 
 --
 -- Индексы сохранённых таблиц
@@ -131,17 +121,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT для таблицы `basket`
 --
 ALTER TABLE `basket`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
 --
 -- AUTO_INCREMENT для таблицы `products`
 --
 ALTER TABLE `products`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+
 --
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;COMMIT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
