@@ -13,7 +13,10 @@
                         <a class="title more_title" href="index.php?c=page&act=product&id=<?= $product["id"]?>"> <?= $product["title"]?></a>
                         <?php if ($_SESSION['user_id']) { ?>
                         <a class="buy"> В корзину <?= $product["price"]?>&#36;</a>
-                        <?php } ?>
+                        <?php } else {
+                            ?> <h3>Товар в корзину может добавить только зарегистрированный пользователь!</h3>
+                        <?php }
+                        ?>
                     </div>
                 </div>
 <?php
@@ -21,5 +24,4 @@
 		}
 		?>
 </main>
-
-
+<?php if(isset($text)){echo "<script>alert('$text')</script>";}?>

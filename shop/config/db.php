@@ -4,4 +4,3 @@
 	define('USERNAME', 'root');
 	define('PASSWORD', 'root');
 	define('DB', 'shop2');
-?>
